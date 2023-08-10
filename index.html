@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7744939344.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="myimg/image-270x160.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="hearder-text">
+                <!-- <p>Web Developer</p> -->
+                <h3>Hello, It's Me<h1>Soham Tonape</h1></h3><h5>And I'm a Computer Science Enginner</h5><br><h6>I'm currently pursuing my bachelor degree from<br>N.B.Navle Sinhgad College of Engineering, <br>Solapur</h6>
+            </div>
+        </div>
+
+<!-- --------------------------about------------- -->
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="myimg/my.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1><br>
+
+
+                    <h3>WEB Developer</h3><br>
+                    <p>I am an Honest and Quick learner Person and Very Passionate about My work, currently I'm learing Everything 💻.My Strength are I'm active learner,Time manager and consistent.Also,My Hobbies are playing cricket,chess,watching movies</p><br>
+
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+                        </div>
+                        <div class="tab-contents active-tabs" id="skills">
+                            <ul>
+                                <li><span>Python</span><br>Developing websites</li>
+                                <li><span>Java</span><br>Software Development</li>
+                                <li><span>Web Developer</span><br>Web App Development</li>
+                                <li><span>App Developer</span><br>Building Android Apps</li>
+                                <li><span>Database</span><br>Backend development</li>
+                                <li><span>Php</span><br>
+                                    Web Development and Server-Side Scripting</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2021-2022</span><br>Intership at Katara Info Tech</li>
+                                <li><span>2022 dec-2023 feb</span><br>Intership at APTTECH</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2020-2024(Btech CSE)</span><br>9.6 CGPA without Backlog</li>
+                                <li><span>2020(HSC)</span><br>68%</li>
+                                <li><span>2018(SSC)</span><br>85%</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="achievements">
+                            <ul>
+                                <li><span>Core Java Traning(Internshala)</span><br></li>
+                                <li><span>Coursera-Crash Course on Python(Coursera)</span><br></li>
+                                <li><span>NPTEL- Data Base Management</span><br></li>
+                                <li><span>NPTEL- Developing Soft Skills and Personality</span><br></li>
+                                <li><span>NPTEL- Programming in Java</span><br></li>
+                                <li><span>Udemy - HTML and CSS for Beginners From Basic to Advance</span><br></li>
+                                <!-- <li><span>2022 dec-2023 feb</span><br>Intership at APTTECH</li> -->
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ---------------------------------services-------------------------------- -->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Web design is the process of creating and designing visually appealing and user-friendly websites. It involves a combination of technical skills, such as coding and graphic design, to ensure websites are functional, responsive, and aesthetically pleasing to provide a seamless user experience.</p>
+                    <a href="#">Learn more</a>
+
+            </div>
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Python</h2>
+                <p>Python is a high-level programming language widely used for software development due to its simplicity, readability, and versatility. Its extensive libraries and frameworks make it suitable for web development, data analysis, artificial intelligence, automation, and more, making it a popular choice among developers for various applications.</p>
+                    <a href="#">Learn more</a>
+
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>
+                    App development is the creation of software applications for mobile devices, including smartphones and tablets. It involves designing, coding, testing, and deploying applications for different operating systems like iOS and Android, addressing user needs and enhancing user experiences in the mobile realm.</p>
+                    <a href="#">Learn more</a>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ------------------------------------portfolio---------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="myimg/image-650x800.jpg">
+                <div class="layer">
+                    <h3>Price comparison project </h3>
+                    <p>Python-based price comparison tool utilizing web scraping to extract product details from Amazon and Flipkart. Upon user input of a product, the tool will determine and display which website offers the lower price</p>
+                    <a href="https://github.com/sohamtonape/Price_comparison_project"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="myimg/ganesh.jpg">
+                <div class="layer">
+                    <h3>Online Ganpati booking website</h3>
+                    <p>A collaborative online platform that brings together sellers and customers to explore, compare, and book exquisite Ganpati murtis, fostering a joyous and blessed celebration of Ganesh Chaturthi. </p>
+                    <a href="https://github.com/sohamtonape/MyGanpatiMurti_project"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="myimg/bmi3.png">
+                <div class="layer">
+                    <h3>Bmi Calculator using tkinter</h3>
+                    <p>BMI calculator using Python's Tkinter library, offering a user-friendly interface to input weight and height. The program swiftly computes the BMI and provides a categorical interpretation of the result, aiding users in tracking their health and fitness progress</p>
+                    <a href="https://github.com/sohamtonape/bmi_calculator"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/sohamtonape" class="btn">See more</a>
+        </div>
+</div>
+<!-- --------------------contact-------------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <P><i class="fa-solid fa-paper-plane"></i> soham.tonape7262@gmail.com</P>
+                <p><i class="fa-solid fa-square-phone"></i> 9511899607</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/soham.tonape.3?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/Soham_Tonape63?t=qhN4x5bzJMVOU7_I8tPwUw&s=09"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/soham_tonape_2002/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/soham-tonape-792a54228"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="myimg/main1 resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="https://formspree.io/f/mknljrre" method="POST" reset(); return false;>
+                    <input type="text" name="Name" id="name" placeholder="Your Name" required> 
+                    <input type="email" name="email" id="email" placeholder="Your Email" required>
+                    <textarea name="Message"  id="message" rows="6" placeholder="Your Message" required></textarea>
+                    <button id="btn" type="submit" class="btn btn2" >Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+            
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p>Copyright © Soham. Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script>
+
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-links");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tabs");
+        }
+        event.currentTarget.classList.add("active-links");
+        document.getElementById(tabname).classList.add("active-tabs")
+    }
+</script>
+
+<script>
+
+
+    var sidemenu= document.getElementById("sidemenu");
+
+
+    function openmenu(){
+        sidemenu.style.right= "0";
+
+    }
+
+    function closemenu(){
+        sidemenu.style.right= "-200px";
+        
+    }
+</script>
+
+
+
+
+</body>
+</html>
